@@ -1,10 +1,11 @@
 <?php
 
-require "../config/Database.php";
-require "../core/Response.php";
-require "../core/Router.php";
-require "../models/SensorModel.php";
-require "../controllers/SensorController.php";
+require __DIR__ . "/config/Database.php";
+require __DIR__ . "/core/Response.php";
+require __DIR__ . "/core/Router.php";
+require __DIR__ . "/models/SensorModel.php";
+require __DIR__ . "/controllers/SensorController.php";
+
 
 // Connect DB
 $db = new Database();
