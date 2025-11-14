@@ -38,6 +38,10 @@ $router->get("/sensor/{id}", function($id) use ($model) {
 $router->delete("/sensor/{id}", function($id) use ($model) {
     SensorController::destroy($model, $id);
 });
+$router->get("/", function() {
+    Response::json(["status" => "success", "message" => "API GPS Active"]);
+});
+
 
 // RUN
 $router->run();
